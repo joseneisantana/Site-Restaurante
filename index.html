@@ -16,7 +16,7 @@
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4">
         <div class="container">
-            <h1 class="navbar-brand m-0">Nome do restaurante</h1>
+            <h1 class="navbar-brand m-0  section-title">Nome do restaurante</h1>
 
            
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!-- Abri  botão  Menu hambuergger Responsivo  vai pegar o id  menu-navegacao-->
@@ -50,6 +50,61 @@
             </nav> <!-- ABRE TAG NAVE RESPONSSÁVEL PELO MENU-->
         </div>
     </header>
+    <!--BLOCO CAROULSEL-->
+    <section  id="sobre-o-restaurante">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/slides/slide1.png" alt="foto do interno">
+                </div>
+
+                <div class="carousel-item " data-bs-interval="3000"> 
+                    <img src="images/slides/slide2.png" alt="copo devinho">
+                </div>
+
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/slides/slide3.png" alt=" mesa com comida">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>                                                                                          <!--SETAS SINALIZADORAS-->
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+      <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="images/restaurante.jpg"  class="d-block w-100 rounded "  alt="foto do espaço interno do restaurante">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="section-title">Sobre o  <span>restaurante </span></h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo possimus facilis maiores debitis eum aliquam iusto doloribus eaque accusantium consequuntur nisi, laboriosam blanditiis inventore odio! Quis animi impedit totam quidem?
+                        </p>
+                        <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vero magni aliquid beatae qui. Adipisci nostrum quos tempora esse soluta perspiciatis ipsa alias sunt. Iusto eveniet quasi doloribus dolorem dolor?
+                        </p>
+                        <ul>
+                            <li>Item 1</li>
+                            <li>Item 2</li>
+                            <li>Item 3</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
