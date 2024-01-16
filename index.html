@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
         <div class="container">
             <h1 class="navbar-brand m-0  section-title">Nome do restaurante</h1>
 
@@ -27,30 +27,31 @@
             <nav class="navbar-collapse collapse  justify justify-content-end " id="menu-navegacao"> <!-- ABRE TAG NAVE RESPONSSÁVEL PELO MENU -->
                 <ul class="nav nav-pills d-block  d-md-flex"><!---d-block  d-md-flex {ESTA REGRA TEM UM D=DISPLAY BLOCK  D + MD DISPLAY MEDIO VAI SER DISPLAYFLEX FLEX}-->
                     <li class="nav-item fw-bold">
-                        <a  class="nav-link active"  href="#">
+                        <a  class="nav-link "  href="#sobre-o-restaurante">
                             <i class="bi bi-house-door me-1"></i><!---Icones do menu  class do bootstrap--->
                             Sobre o restaurante</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a  class="nav-link"  href="#">
+                        <a  href="#eventos" class="nav-link"  >
                             <i class="bi bi-calendar-check me-1"></i>
                             Eventos</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a  class="nav-link"  href="#">
+                        <a  href="#" class="nav-link"  >
                             <i class="bi bi-card-text me-1"></i>
                             Nosso Cardapio</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a  class="nav-link"  href="#">
+                        <a   href="#" class="nav-link"  >
                             <i class="bi bi-chat-left-text me-1"></i>
                             Fale conosco</a>
                     </li>
                 </ul>
-            </nav> <!-- ABRE TAG NAVE RESPONSSÁVEL PELO MENU-->
+            </nav> 
         </div>
     </header>
     <!--BLOCO CAROULSEL-->
+<div data-bs-spy="scroll" data-bs-target="cabecalho">
     <section  id="sobre-o-restaurante">
         <div class="carousel slide" data-bs-ride="carousel" id="carousel">
             <div class="carousel-inner">
@@ -86,11 +87,11 @@
                         <img src="images/restaurante.jpg"  class="d-block w-100 rounded "  alt="foto do espaço interno do restaurante">
                     </div>
                     <div class="col-md-7">
-                        <h2 class="section-title">Sobre o  <span>restaurante </span></h2>
+                        <h2 class="section-title">Sobre o  <span class="text-colored">restaurante </span></h2>
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo possimus facilis maiores debitis eum aliquam iusto doloribus eaque accusantium consequuntur nisi, laboriosam blanditiis inventore odio! Quis animi impedit totam quidem?
                         </p>
-                        <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                        <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis vero magni aliquid beatae qui. Adipisci nostrum quos tempora esse soluta perspiciatis ipsa alias sunt. Iusto eveniet quasi doloribus dolorem dolor?
                         </p>
@@ -105,6 +106,87 @@
             </div>
         </div>
     </section>
+    <section  id="eventos" class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">Para todas <span class="text-colored">as ocasiões<span></h2>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100  rounded mb-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi  bi-calendar-heart-fill"></i>
+                        Aniversários
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis blanditiis voluptas dicta. Amet velit odit, consequuntur quos quo corrupti error perspiciatis. Architecto magnam commodi voluptatum eveniet rem pariatur veritatis eum?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100  rounded mb-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi  bi-arrow-through-heart-fill"></i>
+                        Recepção para casamentos
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis blanditiis voluptas dicta. Amet velit odit, consequuntur quos quo corrupti error perspiciatis. Architecto magnam commodi voluptatum eveniet rem pariatur veritatis eum?
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100  rounded mb-2">
+                    <h3 class="section-title text-colored fs-4">
+                        <i class="bi  bi-people-fill"></i>
+                        Confraternizações</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis blanditiis voluptas dicta. Amet velit odit, consequuntur quos quo corrupti error perspiciatis. Architecto magnam commodi voluptatum eveniet rem pariatur veritatis eum?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cardapio">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title text-center">  Nosso<span class="text-colored">cardápio</span></h2>
+            </div>
+            <div class="row">
+                <aside class="col-md-2">
+                   <nav class="nav nav-pills  flex-column  nav-cardapio">
+                    <button type="button" class=" fw-bold text-start nav-link  text-colored active" >Bebidas não alcoólicas</button>
+                    <button type="button" class=" fw-bold text-start nav-link  text-colored  ">Bebidas  alcoólicas </button>
+                    <button type="button" class=" fw-bold text-start nav-link  text-colored  ">Entradas </button>
+                    <button type="button" class=" fw-bold text-start nav-link  text-colored ">Pratos principais  </button>
+                    <button type="button" class=" fw-bold text-start nav-link  text-colored ">Sobremesas</button>
+                   </nav>
+                </aside>
+                <div  class="col-md-10">
+                    <div class="tabe-content">
+                        <div class="tab-pane active">
+                            <div class="row">
+                               <div class=" col-md-3">
+                                    <img class=" d-block  w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
+                                    <h5 text-colored rw-bold>Coca-cola</h5>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    </p>
+                               </div>
+                               <div class="row">
+                                <div class=" col-md-3">
+                                     <img class=" d-block  w-100" src="images/cardapio/bebidas/coca-cola.jpg" alt="">
+                                     <h5 text-colored rw-bold>Coca-cola</h5>
+                                     <p>
+                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 
 
